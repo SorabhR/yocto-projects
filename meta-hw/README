@@ -1,33 +1,20 @@
 This README file contains information on the contents of the meta-hw layer.
 
-Please see the corresponding sections below for details.
+MOST IMPORTANT THE PACKAGE IS ADDED WITH NAME OF NOT THE FOLDER BUT WITH OUTPUT FILENAME
+E.g HERE THE PACKAGE IS NOT ADDED AS HWLOCAL BUT AS HELLOWORLDS AS THAT IS THE OUTPUT FILE OF c PROGRAM
 
 Dependencies
 ============
 
-  URI: <first dependency>
-  branch: <branch name>
+helloworld.c in recipes-example/hwlocal/files
 
-  URI: <second dependency>
-  branch: <branch name>
-
-  .
-  .
-  .
-
-Patches
-=======
-
-Please submit any patches against the meta-hw layer to the xxxx mailing list (xxxx@zzzz.org)
-and cc: the maintainer:
-
-Maintainer: XXX YYYYYY <xxx.yyyyyy@zzzzz.com>
 
 Table of Contents
 =================
 
   I. Adding the meta-hw layer to your build
- II. Misc
+ II. Add IMAGE_INSTALL_append = " hwlocal" to build/conf/local.conf   //package name
+ III. Build the image
 
 
 I. Adding the meta-hw layer to your build
@@ -35,7 +22,4 @@ I. Adding the meta-hw layer to your build
 
 Run 'bitbake-layers add-layer meta-hw'
 
-II. Misc
-========
 
---- replace with specific information about the meta-hw layer ---
